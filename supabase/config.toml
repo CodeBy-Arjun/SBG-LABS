@@ -1,0 +1,22 @@
+project_id = "upnkjoljwtdhinxgmvoh"
+
+[functions.send-password-reset]
+verify_jwt = false
+
+[functions.send-order-confirmation]
+verify_jwt = false
+
+[functions.send-status-update]
+verify_jwt = false
+
+[functions.ai-order-assistant]
+verify_jwt = false
+
+[functions.ai-price-estimator]
+verify_jwt = false
+
+[functions.ai-admin-summary]
+verify_jwt = false
+
+[functions.generate-invoice]
+verify_jwt = false
