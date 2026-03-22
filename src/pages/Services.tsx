@@ -47,6 +47,35 @@ const Services = () => {
       price: 99,
       features: ["Logo Design", "Brand Identity", "Social Media"],
     },
+
+    {
+      icon: <Document className="w-10 h-10" />,
+      title: "Documentation",
+      description: "Project Documentation For Major and Minor Projects.",
+      price: 499,
+      features: ["UG,PG", "Final projects", "Documents"],
+    },
+    {
+      icon: <Search className="w-10 h-10" />,
+      title: "Research Paper Writing",
+      description: "reasearch paper.",
+      price: 599,
+      features: ["Research", "0 Plagarism", "More Acceptance Rate"],
+    },
+    {
+      icon: <Search className="w-10 h-10" />,
+      title: "PPT",
+      description: "Animated Presentation for your topics.",
+      price: 499,
+      features: ["PPT", "ANIMATED", "MORE PROFFESIONAL"],
+    },
+    {
+      icon: <Search className="w-10 h-10" />,
+      title: "Conference paper writing",
+      description: "Conference paper writing for peer reviews.",
+      price: 699,
+      features: ["Deep Research", "NO AI TOOLS USAGE", "0 PLAGARISM"],
+    },
     {
       icon: <Video className="w-10 h-10" />,
       title: "Video Editing",
