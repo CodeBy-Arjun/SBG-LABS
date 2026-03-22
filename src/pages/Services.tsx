@@ -18,6 +18,9 @@ import {
   FileCheck,
   Search,
   Share2,
+  PenTool,
+  Globe,
+  Database,
 } from "lucide-react";
 
 const Services = () => {
@@ -29,108 +32,130 @@ const Services = () => {
     {
       icon: <Code className="w-10 h-10" />,
       title: "Website Development",
-      description: "Custom, responsive websites built with modern technologies.",
+      description: "Modern responsive websites.",
       price: 999,
-      features: ["Responsive Design", "SEO Optimized", "Fast Loading"],
+      features: ["Responsive", "SEO", "Fast"],
     },
     {
       icon: <Smartphone className="w-10 h-10" />,
       title: "App Development",
-      description: "Mobile applications for Android & iOS.",
+      description: "Android & iOS apps.",
       price: 1999,
-      features: ["Cross-platform", "API Integration", "Publishing"],
+      features: ["Hybrid", "API", "Play Store"],
     },
     {
       icon: <Palette className="w-10 h-10" />,
       title: "Graphic Design",
-      description: "Creative designs for branding & marketing.",
+      description: "Branding & visuals.",
       price: 99,
-      features: ["Logo Design", "Brand Identity", "Social Media"],
+      features: ["Logo", "Social Media", "Brand"],
     },
-
     {
-      icon: <Document className="w-10 h-10" />,
+      icon: <FileText className="w-10 h-10" />,
       title: "Documentation",
-      description: "Project Documentation For Major and Minor Projects.",
+      description: "Project documentation.",
       price: 499,
-      features: ["UG,PG", "Final projects", "Documents"],
+      features: ["UG/PG", "Final Projects", "Reports"],
     },
     {
       icon: <Search className="w-10 h-10" />,
       title: "Research Paper Writing",
-      description: "reasearch paper.",
+      description: "Scopus-level research papers.",
       price: 599,
-      features: ["Research", "0 Plagarism", "More Acceptance Rate"],
+      features: ["Research", "0 Plagiarism", "High Acceptance"],
     },
     {
-      icon: <Search className="w-10 h-10" />,
-      title: "PPT",
-      description: "Animated Presentation for your topics.",
+      icon: <PenTool className="w-10 h-10" />,
+      title: "PPT Design",
+      description: "Animated presentations.",
       price: 499,
-      features: ["PPT", "ANIMATED", "MORE PROFFESIONAL"],
+      features: ["Animation", "Modern Slides", "Professional"],
     },
     {
       icon: <Search className="w-10 h-10" />,
-      title: "Conference paper writing",
-      description: "Conference paper writing for peer reviews.",
+      title: "Conference Papers",
+      description: "Peer-reviewed papers.",
       price: 699,
-      features: ["Deep Research", "NO AI TOOLS USAGE", "0 PLAGARISM"],
+      features: ["Deep Research", "No AI", "0 Plagiarism"],
     },
     {
       icon: <Video className="w-10 h-10" />,
       title: "Video Editing",
-      description: "Professional video editing services.",
+      description: "Professional editing.",
       price: 999,
-      features: ["Color Grading", "Motion Graphics", "Audio"],
+      features: ["Color", "Motion", "Audio"],
     },
     {
       icon: <Image className="w-10 h-10" />,
       title: "Thumbnail Design",
-      description: "High CTR thumbnails for YouTube.",
+      description: "High CTR thumbnails.",
       price: 99,
-      features: ["Eye-catching", "Fast Delivery", "Brand Consistency"],
+      features: ["Attractive", "Fast", "YouTube"],
     },
     {
       icon: <FileText className="w-10 h-10" />,
       title: "Content Writing",
-      description: "SEO-friendly content writing.",
+      description: "SEO blogs & content.",
       price: 199,
-      features: ["SEO Optimized", "Research-based", "Copywriting"],
+      features: ["SEO", "Research", "Copywriting"],
     },
     {
       icon: <Box className="w-10 h-10" />,
       title: "3D & Animation",
-      description: "3D models and animations.",
+      description: "3D visuals.",
       price: 1999,
-      features: ["3D Modeling", "Animation", "Rendering"],
+      features: ["Modeling", "Animation", "Rendering"],
     },
     {
       icon: <Layers className="w-10 h-10" />,
       title: "UI/UX Design",
-      description: "Modern UI/UX design solutions.",
+      description: "User-friendly UI.",
       price: 499,
-      features: ["Wireframing", "Prototyping", "User Testing"],
+      features: ["Wireframe", "Prototype", "Testing"],
     },
     {
       icon: <FileCheck className="w-10 h-10" />,
       title: "ATS Resume",
-      description: "ATS-friendly resumes & portfolios.",
+      description: "Job-ready resumes.",
       price: 199,
-      features: ["ATS Optimized", "Portfolio", "LinkedIn"],
+      features: ["ATS", "Portfolio", "LinkedIn"],
     },
     {
       icon: <Search className="w-10 h-10" />,
       title: "SEO Services",
-      description: "Boost website ranking.",
+      description: "Boost rankings.",
       price: 299,
-      features: ["Keyword Research", "On-page SEO", "Tracking"],
+      features: ["Keywords", "On-page", "Tracking"],
     },
     {
       icon: <Share2 className="w-10 h-10" />,
       title: "Social Media Marketing",
-      description: "Grow your brand online.",
+      description: "Grow your brand.",
       price: 99,
-      features: ["Content Strategy", "Campaigns", "Analytics"],
+      features: ["Content", "Campaigns", "Analytics"],
+    },
+
+    // NEW SERVICES 🔥
+    {
+      icon: <Globe className="w-10 h-10" />,
+      title: "Landing Page Design",
+      description: "High-converting landing pages.",
+      price: 799,
+      features: ["Modern UI", "Fast Load", "Conversion Focus"],
+    },
+    {
+      icon: <Database className="w-10 h-10" />,
+      title: "Backend Development",
+      description: "APIs & server logic.",
+      price: 1499,
+      features: ["Node.js", "Database", "API"],
+    },
+    {
+      icon: <PenTool className="w-10 h-10" />,
+      title: "Logo Animation",
+      description: "Animated brand logos.",
+      price: 399,
+      features: ["Motion", "HD Export", "Brand Identity"],
     },
   ];
 
@@ -151,70 +176,38 @@ const Services = () => {
 
       <div className="pt-32 pb-20 px-4">
         <div className="container mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-center mb-16"
-          >
-            <h1 className="text-5xl font-bold mb-4 text-gradient">
-              Freelancing Services
-            </h1>
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center mb-16">
+            <h1 className="text-5xl font-bold mb-4 text-gradient">Freelancing Services</h1>
             <p className="text-xl text-muted-foreground">
-              Professional services to bring your ideas to life.
+              Professional services to grow your business.
             </p>
           </motion.div>
 
-          {/* SERVICES GRID */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05 }}
-              >
+              <motion.div key={service.title} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: index * 0.05 }}>
                 <Card className="glass-card hover-glow h-full">
                   <CardContent className="p-8">
                     <div className="w-16 h-16 rounded-xl gradient-primary flex items-center justify-center mb-6 text-white">
                       {service.icon}
                     </div>
 
-                    <h3 className="text-2xl font-bold mb-3">
-                      {service.title}
-                    </h3>
-
-                    <p className="text-muted-foreground mb-4">
-                      {service.description}
-                    </p>
-
-                    <p className="text-lg font-semibold mb-4">
-                      Starting from ₹{service.price}
-                    </p>
+                    <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
+                    <p className="text-muted-foreground mb-4">{service.description}</p>
+                    <p className="text-lg font-semibold mb-4">₹{service.price}</p>
 
                     <ul className="space-y-2 mb-6">
                       {service.features.map((feature) => (
-                        <li key={feature} className="text-sm">
-                          • {feature}
-                        </li>
+                        <li key={feature}>• {feature}</li>
                       ))}
                     </ul>
 
-                    {/* BUTTONS */}
                     <div className="flex gap-2">
-                      <Button
-                        className="w-full gradient-primary"
-                        onClick={() =>
-                          handleOrderNow(service.title, service.price)
-                        }
-                      >
+                      <Button onClick={() => handleOrderNow(service.title, service.price)} className="w-full">
                         Order Now
                       </Button>
 
-                      <Button
-                        variant="outline"
-                        className="w-full"
-                        onClick={() => handleContact(service.title)}
-                      >
+                      <Button variant="outline" onClick={() => handleContact(service.title)} className="w-full">
                         Quote
                       </Button>
                     </div>
@@ -228,7 +221,6 @@ const Services = () => {
 
       <Footer />
 
-      {/* ORDER MODAL */}
       <OrderFormModal
         isOpen={isOrderOpen}
         onClose={() => setIsOrderOpen(false)}
